@@ -1,0 +1,354 @@
+@charset "utf-8";
+@import "reset.css";
+@import "module.css";
+html{
+  background-color: #0e3070;
+}
+body{
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  background: #0e3070;
+
+}
+/*定位*/
+.posi_rela{
+  position: relative;
+}
+.posi_abso{
+  position: absolute;
+}
+.posi_abso_all{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/*宽度*/
+.w-50{
+  width: 50%;
+}
+.w-100{
+  width: 100%;
+}
+.w-440{
+  width: 440px;
+}
+/*高度*/
+.hei_314{
+  height: 314px;
+}
+.hei_230{
+  height: 233px;
+}
+/*布局*/
+.d-none{
+  display: none;
+}
+/*flex布局*/
+.d-flex{
+  display: flex;
+}
+
+.flex-justify-content{
+  justify-content: center;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.align-items-center{
+  align-items: center;
+}
+.align-items-end{
+  align-items: flex-end;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-warp{
+  flex-wrap: wrap;
+}
+
+.flex-cen-cen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-bet-cen{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*内边距*/
+.px-10{
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+}
+.px-12{
+  padding-left: 12px!important;
+  padding-right: 12px!important;
+}
+.px-24{
+  padding-left: 24px!important;
+  padding-right: 24px!important;
+}
+.py-12{
+  padding-top: 12px!important;
+  padding-bottom: 12px!important;
+}
+.py-40{
+  padding-top: 40px!important;
+  padding-bottom: 40px!important;
+}
+.px-14{
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.px-16{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.px-20{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.pt-10{
+  padding-top: 10px;
+}
+.pt-4{
+  padding-top: 4px;
+}
+.pt-8{
+  padding-top: 8px;
+}
+.pt-12{
+  padding-top: 12px;
+}
+.pt-16{
+  padding-top: 16px;
+}
+.pt-20{
+  padding-top: 20px;
+}
+.pt-24{
+  padding-top: 24px;
+}
+.pt-28{
+  padding-top: 28px;
+}
+.pr-8{
+  padding-right: 8px;
+}
+.pr-20{
+  padding-right: 20px;
+}
+.pr-40{
+  padding-right: 40px;
+}
+.pb-14{
+  padding-bottom: 14px;
+}
+.pl-5{
+  padding-left: 5px;
+}
+.pl-8{
+  padding-left: 8px;
+}
+.pl-10{
+  padding-left: 10px;
+}
+.pl-14{
+  padding-left: 14px;
+}
+.pl-16{
+  padding-left: 16px;
+}
+.pl-20{
+  padding-left: 20px;
+}
+.pl-30{
+  padding-left: 30px;
+}
+.pl-44{
+  padding-left: 44px;
+}
+.pb-5{
+  padding-bottom: 5px;
+}
+/*外边距*/
+.mx-16{
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.my-30{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mt-6{
+  margin-top: 6px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-12{
+  margin-top: 12px;
+}
+.mt-14{
+  margin-top: 14px;
+}
+.mt-16{
+  margin-top: 16px;
+}
+.mt-18{
+  margin-top: 18px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mr-5{
+  margin-right: 5px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.mr-30{
+  margin-right: 30px;
+}
+.mr-40{
+  margin-right: 40px;
+}
+.ml-8{
+  margin-left: 8px;
+}
+.ml-12{
+  margin-left: 12px;
+}
+.ml-30{
+  margin-left: 30px;
+}
+.ml-40{
+  margin-left: 40px;
+}
+.ml-24{
+  margin-left: 24px;
+}
+/*文字大小*/
+
+.font-12{
+  font-size: 12px;
+}
+.font-14{
+  font-size: 14px;
+}
+.font-15{
+  font-size: 15px;
+}
+.font-16{
+  font-size: 16px;
+}
+.font-18{
+  font-size: 18px;
+}
+.font-20{
+  font-size: 20px;
+}
+.font-22{
+  font-size: 22px;
+}
+.font-24{
+  font-size: 24px;
+}
+/*文字颜色*/
+.color-fff{
+  color: #ffffff;
+}
+.color-fff7{
+  color: rgba(255,255,255,0.7);
+}
+.color-fff8{
+  color: rgba(255,255,255,0.8);
+}
+
+.color-58A6FF{
+  color: #58A6FF;
+}
+.color-D2D5D5{
+  color: #D2D5D5;
+}
+.color-3C9938{
+  color: #3C9938;
+}
+.color-CC9819{
+  color: #CC9819;
+}
+.color-DA6314{
+  color: #DA6314;
+}
+.color-C74E1E{
+  color: #C74E1E;
+}
+.color-7F8AB6{
+  color: #7F8AB6;
+}
+.color-FF9D2A{
+  color: #FF9D2A;
+}
+.color-275EE4{
+  color: #275EE4;
+}
+.color-4DFF90{
+  color: #4DFF90;
+}
+.color-38BACD{
+  color: #38BACD;
+}
+.color-F6992E{
+  color: #F6992E;
+}
+.color-FED42B{
+  color: #FED42B;
+}
+.color-70C6E0{
+  color: #70C6E0;
+}
+
+/*行高*/
+.line-h22{
+  line-height: 22px;
+}
+/*溢出隐藏*/
+.text-overflow{
+  white-space : nowrap;
+  overflow: hidden;
+  text-overflow : ellipsis;
+}
+
+.curPoin{
+  cursor: pointer;
+}
+
+.z-1{
+  z-index: -1;
+}
+.z-9{
+  z-index: 9;
+}
+.font-w400{
+  font-weight: 400;
+}
+
+.bg-112D4E{
+  background: #112D4E;
+}

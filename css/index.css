@@ -1,0 +1,33 @@
+.header{
+  height: 91px;
+  background: #041D45;
+}
+.headCanshu{
+  width: 1440px;
+  margin: 0 115px;
+}
+.mainLeft{
+  width: 439px;
+}
+#andiandianli{
+  height: 170px;
+  background: #041D45;
+}
+#andiandianliang, #andianfeiyong{
+  height: 180px;
+  background: #041D45;
+}
+.mainCenter{
+  width: 972px;
+  height: 966px;
+  background: url('../image/mapCenter.png') no-repeat;
+  background-size: 100% 100%;
+  border-radius: 6px;
+}
+.mainRight{
+  width: 439px;
+}
+#andiandianliang_r, #andianjine, #andiancishu{
+  height: 140px;
+  background: #041D45;
+}

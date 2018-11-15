@@ -1,0 +1,69 @@
+.lrBox{
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  background:rgba(17,30,84,0.9);
+}
+.borderBg{
+  width: 100%;
+  height: 35px;
+  background: url("../image/borderBg.png") no-repeat;
+  display: flex;
+  align-items: center;
+  font-size:16px;
+  font-weight:400;
+  color:rgba(88,166,255,1);
+  padding-left: 14px;
+}
+
+.numBlue{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 36px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+.numBlue1{
+  background:linear-gradient(0deg,rgba(201,87,10,1),rgba(218,107,30,1));
+}
+.numBlue2{
+  background:#3C70EE;
+}
+.numBlue span{
+  font-size: 28px;
+  font-family: STSongti-SC-Bold;
+  font-weight:bold;
+}
+
+.dot{
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.progress-r{
+  width: 290px;
+  height: 11px;
+  background:rgba(38,60,157,0.2);
+}
+.progress-r-son{
+  height: 11px;
+  background: #C74E1E;
+}
+
+.textModule{
+  display: flex;
+  flex-direction: column;
+}
+.textModule span:first-child{
+  color: #38BACD;
+  font-size: 15px;
+  font-weight: 600;
+}
+.textModule span:last-child{
+  font-weight: 400;
+  margin-top: 20px;
+}

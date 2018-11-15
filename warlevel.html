@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>岸电云网站级界面</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/warlevel.css">
+</head>
+<body>
+<!-- 顶部内容 -->
+<div class="header d-flex align-items-center">
+  <img class="ml-40" src="./image/logo.png" alt="">
+  <ul class="headCanshu flex-bet-cen">
+    <li>
+      <div class="font-16 color-D2D5D5 font-w400">今日用电电量（kWh）</div>
+      <div class="mt-12 d-flex headCanshu1"></div>
+    </li>
+    <li>
+      <div class="font-16 color-D2D5D5">昨日用电电量（kWh）</div>
+      <div class="mt-12 d-flex headCanshu2"></div>
+    </li>
+    <li>
+      <div class="font-16 color-D2D5D5">本月用电电量（kWh）</div>
+      <div class="mt-12 d-flex headCanshu3"></div>
+    </li>
+    <li>
+      <div class="font-16 color-D2D5D5">今年用电电量（kWh）</div>
+      <div class="mt-12 d-flex headCanshu4"></div>
+    </li>
+    <li>
+      <div class="font-16 color-D2D5D5">累计用电电量（kWh）</div>
+      <div class="mt-12 d-flex headCanshu5"></div>
+    </li>
+  </ul>
+  <div class="flex-cen-cen">
+    <img src="./image/bell.png" alt="">
+    <img class="ml-24" src="./image/header.png" alt="">
+    <span class="ml-12">管理员</span>
+    <img class="ml-24 mt-6" src="./image/setting.png" alt="">
+  </div>
+</div>
+<!-- 主要内容 -->
+<div class="main d-flex justify-content-between w-100 px-12">
+  <!-- 左侧内容 -->
+  <div class="mainLeft">
+    <div class="borderBg borderBg2">岸电设备档案</div>
+    <div class="mainLeftCont w-100 bg-112D4E py-40 pl-44 color-D2D5D5 font-16 d-flex justify-content-between flex-column">
+      <div class="d-flex">
+        <div class="textModule">
+          <span>状态</span>
+          <span>使用</span>
+        </div>
+        <div class="textModule pl-44">
+          <span>类型</span>
+          <span>低压大容量</span>
+        </div>
+      </div>
+      <div class="textModule">
+        <span>设备编号</span>
+        <span>1140290000003504</span>
+      </div>
+      <div class="textModule">
+        <span>设备容量</span>
+        <span>500kVA</span>
+      </div>
+      <div class="textModule">
+        <span>额定电压</span>
+        <span>500kVA</span>
+      </div>
+      <div class="textModule">
+        <span>额定电流</span>
+        <span>3×750A</span>
+      </div>
+      <div class="textModule">
+        <span>注册时间</span>
+        <span>2018-10-25</span>
+      </div>
+      <div class="textModule">
+        <span>产权单位</span>
+        <span>国网宜昌供电公司</span>
+      </div>
+      <div class="textModule">
+        <span>设备制造商</span>
+        <span>许继集团有限公司</span>
+      </div>
+    </div>
+  </div>
+  <!-- 中间内容 -->
+  <div class="mainCenter">
+    <div class="port-box bg-122c4d">
+      <div class="port-header bg-042043">
+        <ul class="ul-ph">
+          <li><span>用电中船舶</span></li>
+          <li><span>排队用电船舶</span></li>
+          <li><span>泊位</span></li>
+          <li><span>工作中</span></li>
+          <li><span>故障中</span></li>
+          <li><span>空闲中</span></li>
+        </ul>
+      </div>
+      <div class="port-data">
+        <!--左上角数据-->
+        <div class="pd-left">
+          <div><span>接入日期：<i>2018-01-22 15:00</i></span></div>
+          <div><span>水位：<i>174.18</i></span></div>
+          <div><span>泊位总数量：<i>6</i></span></div>
+        </div>
+        <!--右上角数据-->
+        <div class="pd-right clear">
+          <div class="air-data">
+            <div class="air-flag">
+              <div>优</div>
+              <span>空气质量</span>
+            </div>
+            <div class="air-value">26</div>
+          </div>
+          <div class="temperature-data">
+            <span>24°</span>
+            <i class="icon-sun"></i>
+          </div>
+          <div class="wind-value t-center">东北风 2级</div>
+          <div class="temperature-data-all">
+            <div class="icon-sun-white"><span>28/21°</span></div>
+            <div class="icon-cloud"><span>25/19°</span></div>
+          </div>
+        </div>
+        <div class="circle-data">
+          <div class="cd-inside bd-50p">
+            <!--头部数据-->
+            <div class="cd-inside-abs bd-50p">
+              <div class="cd-header-box bd-50p">
+                <div class="cd-header">
+                  <div>
+                    <div>
+                      <div><span>水位(米)：</span><i>20</i></div>
+                      <div><span>泊位总数量(个)：</span><i>80</i></div>
+                      <div><span>空闲泊位数量(个)：</span><i>26</i></div>
+                      <div><span>流量(立方米/秒)：</span><i>19500</i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--底部数据-->
+            <div class="cd-inside-abs bd-50p">
+              <div class="cd-header-box bd-50p">
+                <div style="visibility: hidden;" class="cd-header">
+                  <div>
+                    <div>
+                      <div><span>水位(米)：</span><i>20</i></div>
+                      <div><span>泊位总数量(个)：</span><i>80</i></div>
+                      <div><span>空闲泊位数量(个)：</span><i>26</i></div>
+                      <div><span>流量(立方米/秒)：</span><i>19500</i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cd-device-wrapper">
+                  <ul class="device-list">
+                    <li>
+                      <span class="icon-charge-size icon-park"></span>
+                      <div class="charge-box">
+                        <span class="icon-charge-size icon-charge-ship"></span>
+                        <div class="transfer-line"><div></div></div>
+                        <span class="icon-charge-size icon-work" id='0'></span>
+                        <span class="i-work-value">168471</span>
+                      </div>
+                      <div class="charge-power">
+                        <div class="cp-data"><div>额定功率：</div><span>500</span><i>kW</i></div>
+                        <div class="cp-data"><div>实时功率：</div><span class="c-b2ab0f" id="powerValue168471Current">0</span><i class="c-b2ab0f">kW</i></div>
+                        <div class="cp-line"></div>
+                        <div class="cp-power">
+                          <canvas id="powerValue168471" width="32000" height="25"></canvas>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="icon-charge-size icon-park"></span>
+                      <div class="charge-box">
+                        <span class="icon-charge-size icon-charge-ship"></span>
+                        <div class="transfer-line"><div></div></div>
+                        <span class="icon-charge-size icon-work" id='1'></span>
+                        <span class="i-work-value">168472</span>
+                      </div>
+                      <div class="charge-power">
+                        <div class="cp-data"><div>额定功率：</div><span>500</span><i>kW</i></div>
+                        <div class="cp-data"><div>实时功率：</div><span class="c-b2ab0f" id="powerValue168472Current">0</span><i class="c-b2ab0f">kW</i></div>
+                        <div class="cp-line"></div>
+                        <div class="cp-power">
+                          <canvas id="powerValue168472" width="32000" height="25"></canvas>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="icon-charge-size icon-park"></span>
+                      <div class="charge-box">
+                        <span class="icon-charge-size icon-charge-ship"></span>
+                        <div class="transfer-line"><div></div></div>
+                        <span class="icon-charge-size icon-work" id='2'></span>
+                        <span class="i-work-value">168473</span>
+                      </div>
+                      <div class="charge-power">
+                        <div class="cp-data"><div>额定功率：</div><span>500</span><i>kW</i></div>
+                        <div class="cp-data"><div>实时功率：</div><span class="c-b2ab0f" id="powerValue168473Current">0</span><i class="c-b2ab0f">kW</i></div>
+                        <div class="cp-line"></div>
+                        <div class="cp-power">
+                          <canvas id="powerValue168473" width="32000" height="25"></canvas>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="icon-charge-size icon-park"></span>
+                      <div class="charge-box">
+                        <span class="icon-charge-size icon-charge-ship"></span>
+                        <div class="transfer-line"><div></div></div>
+                        <span class="icon-charge-size icon-work" id='3'></span>
+                        <span class="i-work-value">168474</span>
+                      </div>
+                      <div class="charge-power">
+                        <div class="cp-data"><div>额定功率：</div><span>500</span><i>kW</i></div>
+                        <div class="cp-data"><div>实时功率：</div><span class="c-b2ab0f" id="powerValue168474Current">0</span><i class="c-b2ab0f">kW</i></div>
+                        <div class="cp-line"></div>
+                        <div class="cp-power">
+                          <canvas id="powerValue168474" width="32000" height="25"></canvas>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="icon-charge-size icon-park"></span>
+                      <div class="charge-box">
+                        <span class="icon-charge-size icon-charge-ship"></span>
+                        <div class="transfer-line"><div></div></div>
+                        <span class="icon-charge-size icon-work" id='4'></span>
+                        <span class="i-work-value">168475</span>
+                      </div>
+                      <div class="charge-power">
+                        <div class="cp-data"><div>额定功率：</div><span>500</span><i>kW</i></div>
+                        <div class="cp-data"><div>实时功率：</div><span class="c-b2ab0f" id="powerValue168475Current">0</span><i class="c-b2ab0f">kW</i></div>
+                        <div class="cp-line"></div>
+                        <div class="cp-power">
+                          <canvas id="powerValue168475" width="32000" height="25"></canvas>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="icon-charge-size icon-park"></span>
+                      <div class="charge-box">
+                        <span class="icon-charge-size icon-charge-ship"></span>
+                        <div class="transfer-line"><div></div></div>
+                        <span class="icon-charge-size icon-work" id='5'></span>
+                        <span class="i-work-value">168476</span>
+                      </div>
+                      <div class="charge-power">
+                        <div class="cp-data"><div>额定功率：</div><span>500</span><i>kW</i></div>
+                        <div class="cp-data"><div>实时功率：</div><span class="c-b2ab0f" id="powerValue168476Current">0</span><i class="c-b2ab0f">kW</i></div>
+                        <div class="cp-line"></div>
+                        <div class="cp-power">
+                          <canvas id="powerValue168476" width="32000" height="25"></canvas>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cd-footer">
+                  <ul class="cdf-list">
+                    <li>
+                      <div>2.5km</div>
+                    </li>
+                    <li>
+                      <div>2.0km</div>
+                    </li>
+                    <li>
+                      <div class="bd-50p">秭归新港</div>
+                    </li>
+                    <li>
+                      <div>2.4km</div>
+                    </li>
+                    <li>
+                      <div>3.8km</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--虚线框遮罩层-->
+            <div class="cd-inside-abs bd-50p">
+              <div class="cd-header-box bd-50p">
+                <!--<canvas id="layerCanvas" class="canvas-size " width="514" height="514"></canvas>-->
+                <div  class="canvas-size layer-canvas"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="circle-modal">
+            <div id="modalChart"></div>
+            <div class="modal-table">
+              <div class="modal-thead clearfix">
+                <div class="modal-td">序号</div>
+                <div class="modal-td">开始时间</div>
+                <div class="modal-td">结束时间</div>
+                <div class="modal-td">用电时长</div>
+                <div class="modal-td">用电费用</div>
+              </div>
+              <div class="modal-tbody">
+                <div class="modal-tr clearfix">
+                  <div class="modal-td">1</div>
+                  <div class="modal-td">09:23</div>
+                  <div class="modal-td">19:56</div>
+                  <div class="modal-td">8小时33分钟</div>
+                  <div class="modal-td">108元</div>
+                </div>
+                <div class="modal-tr clearfix">
+                  <div class="modal-td">2</div>
+                  <div class="modal-td">07:28</div>
+                  <div class="modal-td">24:56</div>
+                  <div class="modal-td">10小时28分钟</div>
+                  <div class="modal-td">168元</div>
+                </div>
+                <div class="modal-tr clearfix">
+                  <div class="modal-td">3</div>
+                  <div class="modal-td">16:23</div>
+                  <div class="modal-td">--</div>
+                  <div class="modal-td">--</div>
+                  <div class="modal-td">--</div>
+                </div>
+                <div class="modal-tr clearfix">
+                  <div class="modal-td">4</div>
+                  <div class="modal-td">14:23</div>
+                  <div class="modal-td">--</div>
+                  <div class="modal-td">--</div>
+                  <div class="modal-td">--</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--左下角地图数据-->
+        <div class="pd-bottom-left">
+          <div id="portMap" class="port-map"></div>
+        </div>
+        <!--右下角数据-->
+        <div class="pd-bottom-right">
+          <table cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+              <th colspan="3" style="color: #cccccc">港口巡检计划表</th>
+            </tr>
+            <tr class="pt-th">
+              <th><span>巡视时间</span></th>
+              <th><span>负责人</span></th>
+              <th><span>状态</span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><span>08-25 12:00</span></td>
+              <td><span>张国强</span></td>
+              <td><span>完成</span></td>
+            </tr>
+            <tr>
+              <td><span>08-24 12:00</span></td>
+              <td><span>张国强</span></td>
+              <td><span>完成</span></td>
+            </tr>
+            <tr>
+              <td><span>08-23 12:00</span></td>
+              <td><span>张国强</span></td>
+              <td><span>完成</span></td>
+            </tr>
+            <tr>
+              <td><span>08-22 12:00</span></td>
+              <td><span>张国强</span></td>
+              <td><span>完成</span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- 右侧内容 -->
+  <div class="mainRight d-flex flex-column justify-content-between">
+    <div class="w-100 bg-112D4E" style="height: 543px;">
+      <div class="borderBg borderBg3">本次用电情况</div>
+      <div class="px-24 pt-16">
+
+      </div>
+    </div>
+    <div class="w-100 bg-112D4E" style="height: 163px;">
+      <div class="borderBg borderBg3">本次用电信息</div>
+      <ul class="px-24 w-100 d-flex flex-warp font-15 color-38BACD">
+        <li class="w-50 pt-24 d-flex align-items-center">
+          <span>电量</span>
+          <span class="d-flex align-items-end">
+            <span class="font-24 ml-24 pr-8 color-D2D5D5">110.12</span>
+            <span>kWh</span>
+          </span>
+        </li>
+        <li class="w-50 pt-24 d-flex align-items-center">
+          <span>金额</span>
+          <span class="d-flex align-items-end">
+            <span class="font-24 ml-24 pr-8 color-D2D5D5">7.28</span>
+            <span>元</span>
+          </span>
+        </li>
+        <li class="w-50 pt-24 d-flex align-items-center">
+          <span>电费</span>
+          <span class="d-flex align-items-end">
+            <span class="font-24 ml-24 pr-8 color-D2D5D5">0.66700</span>
+            <span>元/kWh</span>
+          </span>
+        </li>
+        <li class="w-50 pt-24 d-flex align-items-center">
+          <span>服务费</span>
+          <span class="d-flex align-items-end">
+            <span class="font-24 ml-24 pr-8 color-D2D5D5">0.40</span>
+            <span>元/kWh</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="w-100 bg-112D4E" style="height: 218px;">
+      <div class="borderBg borderBg3">近30天岸电电量（kWh）</div>
+      <div class="px-24 pt-16">
+
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./plugins/jquery.min.js"></script>
+<script src="./plugins/echarts.min.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.2&key=80eedf317b2528261bab773c8fbeec39"></script>
+<script src="./js/echartsJson.js"></script>
+<script src="./js/function.js"></script>
+<script src="./js/dataJson.js"></script>
+<script src="./js/warelevelInit.js"></script>
+<script src="./js/warlevel.js"></script>
+</body>
+</html>

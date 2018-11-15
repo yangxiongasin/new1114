@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>岸电云网主图界面</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <!-- 顶部内容 -->
+  <div class="header d-flex align-items-center">
+    <img class="ml-40" src="./image/logo.png" alt="">
+    <ul class="headCanshu flex-bet-cen">
+      <li>
+        <div class="font-16 color-D2D5D5 font-w400">岸电设备总数（台）</div>
+        <div class="mt-12 d-flex headCanshu1"></div>
+      </li>
+      <li>
+        <div class="font-16 color-D2D5D5">今日岸电电量（kWh）</div>
+        <div class="mt-12 d-flex headCanshu2"></div>
+      </li>
+      <li>
+        <div class="font-16 color-D2D5D5">今日服务次数（次）</div>
+        <div class="mt-12 d-flex headCanshu3"></div>
+      </li>
+      <li>
+        <div class="font-16 color-D2D5D5">累计岸电电量（kWh）</div>
+        <div class="mt-12 d-flex headCanshu4"></div>
+      </li>
+      <li>
+        <div class="font-16 color-D2D5D5">累计服务次数（次）</div>
+        <div class="mt-12 d-flex headCanshu5"></div>
+      </li>
+      <li>
+        <div class="font-16 color-D2D5D5">累计服务时长（小时）</div>
+        <div class="mt-12 d-flex headCanshu6"></div>
+      </li>
+    </ul>
+  </div>
+  <!-- 主要内容 -->
+  <div class="main d-flex justify-content-between w-100 mt-12 mx-16">
+    <!-- 左侧内容 -->
+    <div class="mainLeft">
+      <!--岸电电力-->
+      <div class="lrBox w-100 hei_314">
+        <div class="borderBg">岸电电力</div>
+        <!--岸电电力内容-->
+        <div class="mx-16 mt-12 w-100">
+          <div class="d-flex justify-content-between">
+            <div>
+              <div class="color-58A6FF">实时功率</div>
+              <div class="font-18 mt-10">
+                <span class="addl-ssgl">56080.48</span>kW
+              </div>
+            </div>
+            <div class="mr-20">
+              <div class="color-58A6FF">岸电站容量</div>
+              <div class="font-18 mt-10">
+                <span class="addl-adzrl">44456080.48</span>kW
+              </div>
+            </div>
+          </div>
+          <div class="flex-bet-cen mt-20">
+            <span class="color-58A6FF">用电功率曲线（kW）</span>
+            <div class="flex-cen-cen font-12 font-w400">
+              <span class="dot" style="background: #275EE4"></span>
+              <span class="color-275EE4 ml-8">今日</span>
+              <span class="dot ml-12" style="background: #FF9D2A"></span>
+              <span class="color-FF9D2A ml-8">昨日</span>
+            </div>
+          </div>
+          <!-- 岸电电力echarts -->
+          <div class="w-100 mt-12" id="andiandianli"></div>
+        </div>
+      </div>
+      <!--今日岸电电量-->
+      <div class="lrBox w-100 hei_314 mt-12">
+        <div class="borderBg">今日岸电电量</div>
+        <div class="mx-16 mt-12 w-100">
+          <div class="w-100 flex-cen-cen mt-12">
+            <div class="jraddlVal d-flex"></div>
+            <span class="font-16">kWh</span>
+          </div>
+          <div class="flex-bet-cen mt-16">
+            <span class="color-58A6FF">今日用电电量曲线（kWh）</span>
+            <div class="flex-cen-cen font-12 font-w400">
+              <span class="dot" style="background: #275EE4"></span>
+              <span class="color-275EE4 ml-8">今日</span>
+              <span class="dot ml-12" style="background: #FF9D2A"></span>
+              <span class="color-FF9D2A ml-8">昨日</span>
+            </div>
+          </div>
+          <!-- 今日岸电电量echarts -->
+          <div class="w-100 mt-12" id="andiandianliang"></div>
+        </div>
+      </div>
+      <!--今日岸电费用-->
+      <div class="lrBox w-100 hei_314 mt-12">
+        <div class="borderBg">今日岸电费用</div>
+        <div class="mx-16 mt-12 w-100">
+          <div class="w-100 flex-cen-cen mt-12">
+            <div class="jradfyVal d-flex"></div>
+            <span class="font-16">天</span>
+          </div>
+          <div class="flex-bet-cen mt-16">
+            <span class="color-58A6FF">岸电费用曲线（kWh）</span>
+            <div class="flex-cen-cen font-12 font-w400">
+              <span class="dot" style="background: #4DFF90"></span>
+              <span class="color-4DFF90 ml-8">今日</span>
+              <span class="dot ml-12" style="background: #275EE4"></span>
+              <span class="color-275EE4 ml-8">昨日</span>
+            </div>
+          </div>
+          <!-- 今日岸电费用echarts -->
+          <div class="w-100 mt-12" id="andianfeiyong"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 中间内容 -->
+    <div class="mainCenter"></div>
+    <!-- 右侧内容 -->
+    <div class="mainRight">
+      <!--岸电电量-->
+      <div class="lrBox w-100 hei_230">
+        <div class="borderBg">岸电电量</div>
+        <div class="mx-16 py-12">
+          <div class="flex-bet-cen w-100">
+            <span class="color-58A6FF">近30日用电量（kWh）</span>
+            <span class="color-3C9938">
+              <span>年累计用电电量</span>
+              <span class="font-18 color-fff">785497987</span>
+              <span>kWh</span>
+            </span>
+          </div>
+          <div class="mt-20" id="andiandianliang_r"></div>
+        </div>
+      </div>
+      <!--岸电费用-->
+      <div class="lrBox w-100 hei_230 mt-12">
+        <div class="borderBg">岸电费用</div>
+        <div class="mx-16 py-12">
+          <div class="flex-bet-cen w-100">
+            <span class="color-58A6FF">近30日用电金额（元）</span>
+            <span class="color-CC9819">
+              <span>年累计用电费用</span>
+              <span class="font-18 color-fff">785497987</span>
+              <span>元</span>
+            </span>
+          </div>
+          <div class="mt-20" id="andianjine"></div>
+        </div>
+      </div>
+      <!--岸电次数-->
+      <div class="lrBox w-100 hei_230 mt-12">
+        <div class="borderBg">岸电次数</div>
+        <div class="mx-16 py-12">
+          <div class="flex-bet-cen w-100">
+            <span class="color-58A6FF">近30日用电次数（次）</span>
+            <span class="color-DA6314">
+              <span>年累计用电次数</span>
+              <span class="font-18 color-fff">785497987</span>
+              <span>次</span>
+            </span>
+          </div>
+          <div class="mt-20" id="andiancishu"></div>
+        </div>
+      </div>
+      <!--岸电站电量排名(kWh)-->
+      <div class="lrBox w-100 hei_230 mt-12">
+        <div class="borderBg">岸电站电量排名(kWh)</div>
+        <div class="mx-16 pt-8 listhtml">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./plugins/jquery.min.js"></script>
+  <script src="./plugins/echarts.min.js"></script>
+  <script src="./js/echartsJson.js"></script>
+  <script src="./js/function.js"></script>
+  <script src="./js/dataJson.js"></script>
+  <script src="./js/init.js"></script>
+</body>
+</html>
