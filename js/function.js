@@ -126,6 +126,28 @@ function numBlue(num, bgColor, textColor, elem) {
   elem.appendChild(newFrag)
 }
 
+function runDashboard(index, val, max, min) {
+  var $dom = $('.dashboard-list').eq(index);
+  $dom.find('.dashboard-min').text(min || 0);
+  $dom.find('.dashboard-max').text(max);
+
+  var unit;
+  switch (index) {
+    case 0:
+      unit = 'V';
+      break;
+
+    case 1: unit = 'V';break;
+
+    case 2: unit = 'V'; break;
+    case 3: unit = 'A'; break;
+    case 4: unit = 'A'; break;
+    case 5: unit = 'A'; break;
+  }
+  $dom.find('.dashboard-val').text(val + unit);
+  $dom.find('.dashboard-highlight, .dashboard-pointer').css('transform', 'rotate(' + val / max * 100 + 'deg)');
+}
+
 //最小值
 Array.prototype.min = function() {
   var min = this[0];
