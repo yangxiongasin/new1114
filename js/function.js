@@ -15,6 +15,8 @@ var resetSize = function () {
   })
 }
 
+resetSize()
+
 // 第一个是选择器，第二个是数字大小默认为0，第三个是起始的数字默认为0，第四个是结束时间2000ms
 var numberRock =  function (select, count, sum, time) {
   // 单个字是48，1是33

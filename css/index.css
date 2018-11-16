@@ -28,3 +28,49 @@
 #andiandianliang_r, #andianjine, #andiancishu{
   height: 140px;
 }
+
+
+
+.circle-container {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.circle-container .circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.circle-container .pointer {
+  display: none;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  margin-left: -110px;
+  width: 220px;
+  height: 60px;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background-image: url(../image/pointer.png);
+  background-repeat: no-repeat;
+  background-position: center 24px;
+}
+
+.circle-container .circle:hover + .pointer {
+  display: block;
+}
+
+.circle-container .pointer p {
+  display: inline-block;
+  padding: 0 10px;
+  background: rgba(242,191,10,1);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 5px;
+  line-height: 20px;
+}

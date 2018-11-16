@@ -21,3 +21,9 @@ runDashboard(2, 382, 500, 0);
 runDashboard(3, 180, 500, 0);
 runDashboard(4, 181, 500, 0);
 runDashboard(5, 182, 240, 0);
+
+
+
+window.addEventListener('resize', function () {
+  resetSize()
+})

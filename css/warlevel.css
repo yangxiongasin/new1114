@@ -13,18 +13,18 @@ body{
   margin: 0 152px 0 92px;
 }
 .mainLeft{
-  width: 261px;
+  width: 337px;
 }
 .mainLeftCont{
   height: 916px;
 }
 .mainCenter{
-  width: 927px;
+  width: 964px;
   height: 966px;
   border-radius: 6px;
 }
 .mainRight{
-  width: 686px;
+  width: 559px;
   height: 951px;
 }
 .borderBg{
@@ -481,13 +481,14 @@ ul, li{
 .pd-left span{
   display: inline-block;
   padding: 2px 5px 3px 5px;
-  color: #a7acb2;
+  color: #cccccc;
+  font-size: 15px;
   background-color: #072246;
 }
 .pd-left span i{
-  color: #c0c4ca;
+  color: #ebeaea;
   font-style: normal;
-  font-size: 13px;
+  font-size: 16px;
   font-family: Arial, sans-serif;
 }
 .pd-right{
@@ -519,7 +520,7 @@ ul, li{
 }
 .air-flag{
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
   width: 50%;
 }
@@ -636,6 +637,9 @@ ul, li{
   -moz-border-radius: 50%;
   border-radius: 50%;
   position: relative;
+  margin-top: 175px;
+  margin-bottom: 73px;
+  transform: scale(1.5);
 }
 .cd-inside, .cd-inside-abs{
   width: 514px;
@@ -731,13 +735,13 @@ ul, li{
   width: 50px;
   height: 70px;
   margin: 30px auto 0;
-  border: 1px solid #f2370b;
+  border: 1px solid #09BCFF;
   position: relative;
 }
 .transfer-line{
   width: 40px;
   height: 60px;
-  border: 1px solid #f2370b;
+  border: 1px solid #09BCFF;
   margin: 4px 0 0 4px;
   position: relative;
 }
@@ -864,8 +868,8 @@ ul, li{
   z-index: 1;
 }
 .cdf-list{
-  width: 50%;
-  margin: 0 auto;
+  /*width: 50%; */
+  /*margin: 0 auto;*/
   /*safari*/
   display:-webkit-box;
   display:-ms-flexbox;
@@ -897,19 +901,8 @@ ul, li{
   padding-top: 27px;
   font-family: Arial, sans-serif;
 }
-.cdf-list li:first-child div{
-  background: url(../img/supermarlet.png) no-repeat center top;
-  background-size: 22px 22px;
-  -webkit-background-size: 22px 22px;
-  -moz-background-size: 22px 22px;
-}
-.cdf-list li:nth-child(2) div{
-  background: url(../img/pharmacy.png) no-repeat center top;
-  background-size: 22px 22px;
-  -webkit-background-size: 22px 22px;
-  -moz-background-size: 22px 22px;
-}
-.cdf-list li:nth-child(3) div{
+
+.cdf-list li:nth-child(1) div{
   width: 82px;
   height: 82px;
   padding-top: 42px;
@@ -921,20 +914,9 @@ ul, li{
   font-size: 15px;
   text-align: center;
 }
-.cdf-list li:nth-child(4) div{
-  background: url(../img/police.png) no-repeat center top;
-  background-size: 22px 22px;
-  -webkit-background-size: 22px 22px;
-  -moz-background-size: 22px 22px;
-}
-.cdf-list li:nth-child(5) div{
-  background: url(../img/car.png) no-repeat center top;
-  background-size: 22px 22px;
-  -webkit-background-size: 22px 22px;
-  -moz-background-size: 22px 22px;
-}
 .pd-bottom-right{
-  width: 140px;
+  width: 210px;
+  height: 117px;
   padding: 5px;
   background-color: #344a5a;
   position: absolute;
@@ -950,6 +932,7 @@ ul, li{
 }
 .pd-bottom-right table thead th{
   text-align: center;
+  height: 18px;
 }
 .pd-bottom-right table thead tr:first-child th{
   -webkit-transform: scale(0.7) translateY(-3px);
@@ -960,6 +943,7 @@ ul, li{
 }
 .pd-bottom-right table thead tr.pt-th th{
   background-color: #041f35;
+  height: 18px;
 }
 .pd-bottom-right table thead th span{
   display: block;
@@ -977,6 +961,9 @@ ul, li{
 }
 .pd-bottom-right table tbody td{
   text-align: center;
+}
+.pd-bottom-right table tbody tr{
+  height: 18px
 }
 .pd-bottom-right table tbody tr td span{
   display: block;
@@ -999,8 +986,8 @@ ul, li{
   background-color: #1c3447;
 }
 .pd-bottom-left{
-  width: 135px;
-  height: 80px;
+  width: 177px;
+  height: 117px;
   padding: 3px;
   background-color: #2b4252;
 }
@@ -1205,11 +1192,13 @@ ul, li{
 .dashboard-container {
   color: #38BACD;
   font-size: 16px;
+  width: 105%;
+  margin: 0 -10px 0;
 }
 
 .dashboard-list {
-  width: 195px;
-  margin-right: 20px;
+  width: 178px;
+  /*margin-right: 5px;*/
   position: relative;
 }
 
@@ -1220,15 +1209,18 @@ ul, li{
 .dashboard-top {
   height: 136px;
   line-height: 122px;
+  transform: scale(0.8);
 }
 
 .dashboard-top>div:first-child {
-  width: 22px;
+  /*width: 22px;*/
+  margin-right:3px;
   text-align: left;
 }
 
 .dashboard-top>div:last-child {
-  width: 36px;
+  /*width: 36px;*/
+  margin-left:3px;
   text-align: right;
 }
 
@@ -1276,15 +1268,24 @@ ul, li{
   background-size: 100%;
   background-repeat: no-repeat;
 }
+.dhye2 {
+  background-image: url(../image/dashboard-bg2.png) !important;
+}
 
 .dashboard-pointer, .dashboard-highlight {
   z-index: 2;
   transition: transform 1s ease;
   background-image: url(../image/dashboard-highlight.png);
 }
+.dhiye2 {
+  background-image: url(../image/dashboard-highlight2.png)!important;
+}
 
 .dashboard-pointer {
   background-image: url(../image/dashboard-pointer.png);
+}
+.dpye2 {
+  background-image: url(../image/dashboard-pointer2.png)!important;
 }
 
 

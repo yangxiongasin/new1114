@@ -18,8 +18,19 @@ var andiandianliOption = {
       axisLine: { show: true,lineStyle:{ color: xAxisLineColor }},
       axisLabel:{interval: 3,textStyle:{color: xAxisTextColor,fontSize:12} },
       axisTick : {show: false},
-      axisPointer : {type: 'none'},
+      axisPointer : {
+        type: 'line',
+        lineStyle: {
+          color: 'rgba(255,255,255,0.3)',
+          width: 2
+        }
+      },
       data: hourData,
+      name: '123123',
+      nameLocation: 'end',
+      nameTextStyle: {
+        color:  'red'
+      }
     },
   ],
   yAxis: [
@@ -88,7 +99,13 @@ var andiandianliangOption = {
       axisLine: { show: true,lineStyle:{ color: xAxisLineColor }},
       axisLabel:{interval: 3,textStyle:{color: xAxisTextColor,fontSize:12} },
       axisTick : {show: false},
-      axisPointer : {type: 'none'},
+      axisPointer : {
+        type: 'line',
+        lineStyle: {
+          color: 'rgba(255,255,255,0.3)',
+          width: 2
+        }
+      },
       data: hourData,
     },
   ],
@@ -132,7 +149,13 @@ var andianfeiyongOption = {
       axisLine: { show: true,lineStyle:{ color: xAxisLineColor }},
       axisLabel:{interval: 3,textStyle:{color: xAxisTextColor,fontSize:12} },
       axisTick : {show: false},
-      axisPointer : {type: 'none'},
+      axisPointer : {
+        type: 'line',
+        lineStyle: {
+          color: 'rgba(255,255,255,0.3)',
+          width: 2
+        }
+      },
       data: hourData,
     },
   ],
@@ -167,7 +190,10 @@ var andianfeiyongOption = {
 var andiandianliang_rOption = {
   backgroundColor: 'transparent',
   grid: {left: '2%',top:"12%",bottom: "5%",right:"5%",containLabel: true},
-  tooltip : { trigger: 'axis',axisPointer : { type : 'shadow'}},
+  tooltip : {
+    trigger: 'axis',
+    axisPointer : { type : 'shadow'}
+  },
   xAxis: [
     {
       type: 'category',
@@ -198,11 +224,11 @@ var andiandianliang_rOption = {
       color: new echarts.graphic.LinearGradient(
         0, 0, 0, 1, [{
           offset: 0,
-          color: '#3CC6AA'
+          color: '#44B238'
         },
           {
             offset: 1,
-            color: '#44B238'
+            color: '#0E723B'
           }
         ]
       )

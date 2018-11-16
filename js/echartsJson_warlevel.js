@@ -16,7 +16,13 @@ var yongdianqingkuangOption = {
       axisLine: { show: true,lineStyle:{ color: xAxisLineColor }},
       axisLabel:{interval: 0,textStyle:{color: xAxisTextColor,fontSize:12} },
       axisTick : {show: false},
-      axisPointer : {type: 'none'},
+      axisPointer : {
+        type: 'line',
+        lineStyle: {
+          color: 'rgba(255,255,255,0.3)',
+          width: 2
+        }
+      },
       data: hourData,
     },
   ],
@@ -33,8 +39,8 @@ var yongdianqingkuangOption = {
       data: [],
       name: '今日',
       type: 'line',
-      symbol:"circle",
-      symbolSize:3
+      symbol:"image://./image/circle-green.svg",
+      symbolSize:8
     }
   ]
 };
@@ -51,8 +57,14 @@ var mouthUserpowerOption = {
       axisLine: { show: true,lineStyle:{ color: xAxisLineColor }},
       axisLabel:{interval: 0,textStyle:{color: xAxisTextColor,fontSize:12} },
       axisTick : {show: false},
-      axisPointer : {type: 'none'},
       data: hourData,
+      axisPointer : {
+        type: 'line',
+        lineStyle: {
+          color: 'rgba(255,255,255,0.3)',
+          width: 2
+        }
+      },
     },
   ],
   yAxis: [
@@ -69,7 +81,7 @@ var mouthUserpowerOption = {
       name: '今日',
       type: 'line',
       symbol:"circle",
-      symbolSize:3
+      symbolSize:6
     }
   ]
 };

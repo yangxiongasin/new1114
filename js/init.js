@@ -1,10 +1,11 @@
 // 顶部数字加载
-numBlue(11745, 'numBlue1', 'color-fff', $('.headCanshu1')[0])
-numBlue(11745, 'numBlue1', 'color-fff', $('.headCanshu2')[0])
-numBlue(117, 'numBlue1', 'color-fff', $('.headCanshu3')[0])
-numBlue(11745, 'numBlue1', 'color-fff', $('.headCanshu4')[0])
-numBlue(11745, 'numBlue1', 'color-fff', $('.headCanshu5')[0])
-numBlue(4517, 'numBlue1', 'color-fff', $('.headCanshu6')[0])
+numBlue(150, 'numBlue1', 'color-fff', $('.headCanshu1')[0])
+numBlue(1234, 'numBlue1', 'color-fff', $('.headCanshu2')[0])
+numBlue(2345, 'numBlue1', 'color-fff', $('.headCanshu3')[0])
+numBlue(47626, 'numBlue1', 'color-fff', $('.headCanshu4')[0])
+numBlue(4812, 'numBlue1', 'color-fff', $('.headCanshu5')[0])
+numBlue(7216, 'numBlue1', 'color-fff', $('.headCanshu6')[0])
+
 // 今日岸电电量
 numBlue(1174729, 'numBlue2', 'color-F6992E', $('.jraddlVal')[0])
 numBlue(743302, 'numBlue2', 'color-FED42B', $('.jradfyVal')[0])
@@ -39,3 +40,34 @@ andiancishuOption.series[0].data = [20,30,40,50,60,50,78,88,90,56,23,54,120,110,
 andiancishuEchart.setOption(andiancishuOption);
 
 setProcess(listData, 900000000)
+
+
+window.addEventListener('resize', function () {
+  resetSize()
+})
+
+
+var $circlContainer = $('.js-circle-container'), circleHtml = '';
+circleListData.forEach((i)=> {
+  circleHtml +=
+    "<div class='circle-container' style='top:"+ i.top +"px; left: "+ i.left +"px;background: red'>" +
+    "<div class='circle'></div>" +
+    "<div class='pointer'><p>"+ i.name +"</p></div>"+
+    "</div>";
+});
+
+$circlContainer.html(circleHtml).on('click', '.circle', function() {
+  switch($(this).next().text()) {
+    case '秭归A':
+      window.open('./warlevel.html')
+      break;
+
+    case '秭归B':
+      window.open('./warlevel.html')
+      break;
+
+    default:
+      window.open('./warlevel.html')
+      break;
+  }
+});
