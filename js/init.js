@@ -1,3 +1,5 @@
+resetSize()
+
 // 顶部数字加载
 numBlue(150, 'numBlue1', 'color-fff', $('.headCanshu1')[0])
 numBlue(1234, 'numBlue1', 'color-fff', $('.headCanshu2')[0])
@@ -50,7 +52,7 @@ window.addEventListener('resize', function () {
 var $circlContainer = $('.js-circle-container'), circleHtml = '';
 circleListData.forEach((i)=> {
   circleHtml +=
-    "<div class='circle-container' style='top:"+ i.top +"px; left: "+ i.left +"px;background: red'>" +
+    "<div class='circle-container' style='top:"+ i.top +"px; left: "+ i.left +"px;'>" +
     "<div class='circle'></div>" +
     "<div class='pointer'><p>"+ i.name +"</p></div>"+
     "</div>";

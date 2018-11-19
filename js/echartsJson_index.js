@@ -25,12 +25,7 @@ var andiandianliOption = {
           width: 2
         }
       },
-      data: hourData,
-      name: '123123',
-      nameLocation: 'end',
-      nameTextStyle: {
-        color:  'red'
-      }
+      data: hourData
     },
   ],
   yAxis: [

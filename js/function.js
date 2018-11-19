@@ -15,7 +15,6 @@ var resetSize = function () {
   })
 }
 
-resetSize()
 
 // 第一个是选择器，第二个是数字大小默认为0，第三个是起始的数字默认为0，第四个是结束时间2000ms
 var numberRock =  function (select, count, sum, time) {
@@ -135,12 +134,8 @@ function runDashboard(index, val, max, min) {
 
   var unit;
   switch (index) {
-    case 0:
-      unit = 'V';
-      break;
-
+    case 0: unit = 'V'; break;
     case 1: unit = 'V';break;
-
     case 2: unit = 'V'; break;
     case 3: unit = 'A'; break;
     case 4: unit = 'A'; break;
